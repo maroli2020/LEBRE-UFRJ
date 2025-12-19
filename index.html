@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LBRE - Lab. de Bioquímica de Resposta ao Estresse - UFRJ</title>
+    <style>
+        :root {
+            --primary: #003366; /* Azul UFRJ */
+            --secondary: #00509d;
+            --accent: #f0f4f8;
+            --text: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--accent);
+        }
+
+        header {
+            background: linear-gradient(rgba(0,51,102,0.9), rgba(0,51,102,0.9)), url('https://images.unsplash.com/photo-1532187875605-2fe3587b1c08?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: var(--white);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background: var(--white);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 { color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .card:hover { transform: translateY(-5px); border-color: var(--secondary); }
+
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .lattes { background-color: #2c3e50; }
+        .rg { background-color: #00ccbb; }
+        .wos { background-color: #f39c12; }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Laboratório de Bioquímica de Resposta ao Estresse (LBRE)</h1>
+    <p>Instituto de Bioquímica Médica Leopoldo de Meis - IBqM / UFRJ</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#pesquisa">Pesquisa</a>
+    <a href="#publicacoes">Produção Científica</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<div class="container">
+    
+    <section id="sobre">
+        <h2>Sobre o Laboratório</h2>
+        <p>O LBRE investiga os mecanismos moleculares envolvidos na adaptação celular a condições de estresse. Focamos na bioenergética mitocondrial, no metabolismo de radicais livres e nas respostas bioquímicas em diversos modelos biológicos, contribuindo para o avanço da ciência básica e translacional na UFRJ.</p>
+        
+        <div class="card">
+            <h3>Prof. Marcus F. Oliveira</h3>
+            <p>Coordenador e Pesquisador Principal. Experiência em Bioquímica, com ênfase em Metabolismo e Bioenergética.</p>
+            <div class="btn-group">
+                <a href="http://lattes.cnpq.br/0053965943745529" target="_blank" class="btn lattes">Currículo Lattes</a>
+                <a href="https://www.researchgate.net/profile/Marcus-Oliveira-5" target="_blank" class="btn rg">ResearchGate</a>
+                <a href="https://www.webofscience.com/wos/author/record/G-3158-2011" target="_blank" class="btn wos">Web of Science</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="pesquisa">
+        <h2>Linhas de Pesquisa</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Bioenergética Mitocondrial</h3>
+                <p>Estudo dos processos de transporte de elétrons e síntese de ATP sob condições de estresse fisiológico e patológico.</p>
+            </div>
+            <div class="card">
+                <h3>Espécies Reativas de Oxigênio</h3>
+                <p>Análise da produção de radicais livres e o papel das defesas antioxidantes na sinalização celular.</p>
+            </div>
+            <div class="card">
+                <h3>Adaptação Metabólica</h3>
+                <p>Mecanismos bioquímicos que permitem a sobrevivência de organismos em ambientes adversos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="publicacoes">
+        <h2>Produção Científica</h2>
+        <p>Acompanhe nosso trabalho atualizado através das plataformas internacionais de alto impacto:</p>
+        <ul>
+            <li>Análise de métricas de citação no <strong>Web of Science</strong>.</li>
+            <li>Pré-prints e discussões acadêmicas no <strong>ResearchGate</strong>.</li>
+            <li>Histórico completo de projetos financiados no <strong>Lattes</strong>.</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer id="contato">
+    <p><strong>LBRE - UFRJ</strong></p>
+    <p>Centro de Ciências da Saúde (CCS) - Bloco H<br>Cidade Universitária, Rio de Janeiro - RJ</p>
+    <p>© 2024 Laboratório de Bioquímica de Resposta ao Estresse</p>
+</footer>
+
+</body>
+</html>
